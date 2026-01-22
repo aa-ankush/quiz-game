@@ -1,0 +1,267 @@
+
+:root{
+  --bgc:#faf8f6;
+  --text:#1a1a1a;
+  --brand:#111213;
+  --primary-clr:#ED526C;
+  --primary-dark:#e04560;
+  --border:#e7e2dd;
+  --border2:#ED526C ;
+  --partext:#636363;
+  --border3:#8EAFFF;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  background:var(--bgc);
+  color:var(--text);
+  font-family:"Inter", sans-seri;
+}
+
+.container {
+   width: 100%;
+   max-width: 1440px;
+   padding-inline: 150px;
+   margin-inline: auto;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 80px;
+    padding-block: 16px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    
+}
+
+.logo p {
+    display: inline-block;
+}
+ 
+.logo img {
+    width: 32px;
+}
+
+.links {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+}
+
+.links a{
+    text-decoration: none;
+    color:var(--text);
+    font-weight: 500;
+    opacity: .8;
+}
+
+.links a:hover {
+  opacity: 1;
+}
+
+.login {
+    padding-inline: 24px;
+    padding-block: 12px;
+    background-color: var(--primary-clr);
+    border-radius: 8px;
+    color: white;
+    text-decoration: none;
+    box-shadow:0 10px 24px #ee5a7240;
+}
+
+.login:hover {
+    background-color: var(--primary-dark);
+}
+
+.login a {
+    text-decoration: none;
+    color: white;
+}
+
+
+
+.divider{
+    border: 1px solid var(--border);
+}
+
+.content {
+    padding-block:36px ;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: .8rem;
+}
+
+.header {
+    font-size: 3rem;
+    color: var(--primary-clr);
+}
+
+ .subhead {
+    color: var(--partext);
+    font-size: 1.3rem;
+    text-align: center;
+    width: 60%;
+} 
+
+.paratext {
+    display: flex;
+    justify-content: center;
+}
+
+.paracontent {
+    padding-block: 16px;
+    color: var(--partext);
+    border: 2px solid var(--border);
+    padding-inline: 24px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background-color: #8eb0ff08;
+}
+
+.target-icon {
+    width: 32px;
+    color: var(--primary-clr);
+}
+
+.mission {
+    display: flex;
+    gap: .8rem;
+    align-content: flex-start;
+}
+
+.text {
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
+.sechead {
+    text-align: center;
+    margin-block: 32px;
+}
+
+.raw{
+    display: flex;
+    justify-content: space-between;
+    padding-block: 32px;
+
+}
+
+.card {
+    padding: 16px;
+    border: 2px solid var(--border);
+    border-radius: 8px;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: .8rem;
+    background-color: #8eb0ff08;
+}
+
+.lucide {
+    color: var(--primary-clr);
+}
+
+.card-text {
+    font-size: 1.1rem;
+    color: var(--partext);
+    line-height: 1.5;
+}
+
+.story-sec {
+    display: flex;
+    align-items: center;
+    gap: .7rem;
+}
+
+.story-content {
+     padding-block: 16px;
+    color: var(--partext);
+    border: 2px solid var(--border);
+    padding-inline: 24px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background-color: #8eb0ff08;
+    margin-block: 16px;
+}
+
+
+.cta {
+     border: 2px solid var(--border);
+    padding-inline: 24px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background-color: #8eb0ff08;
+    margin-block: 16px;
+    text-align: center;
+    padding-block: 16px;
+    margin-block: 48px;
+}
+
+.btn2 {
+   display:flex;
+   gap:16px;
+   align-items:center;
+   justify-content: center;
+}
+
+.play-btn {
+    padding-inline: 24px;
+    padding-block: 12px;
+    background-color: var(--primary-clr);
+    border-radius: 8px;
+    color: white;
+    display: inline-block;
+    text-decoration: none;
+    box-shadow:0 10px 24px rgba(238,90,114,.25);
+}
+
+.play-btn:hover {
+    background-color: var(--primary-dark);
+}
+
+.create-btn {
+    padding-inline: 24px;
+    padding-block: 12px;
+    border-radius: 8px;
+    color: var(--text);
+    text-decoration: none;
+    border: 1px solid var(--border2);
+    background-color:#ffff;
+}
+
+.create-btn:hover {
+    border-color: var(--primary-dark);
+     box-shadow:0 6px 16px rgba(0,0,0,.06);
+}
+
+.footer {
+    border: 1px solid var(--border);
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Quiz Results</title>
+  <link rel="stylesheet" href="../css/scoreboard.css">
+  <link rel="stylesheet" href="../../../style.css">
+  <!-- FontAwesome for Trophy Icon -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+  <script src="../../other pages/javaScriptfiles/scoreboard.js"></script>
+</head>
+<body>
+
+      <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <img src="../../Images/Brain 1.png" alt="">
+                <h3>Quiz Craft</h3>
+            </div>
+            <div class="nav-links">
+                <ul class="links">
+                    <li><a href="Assets/other pages/html files/signup.html">Create</a></li>
+                     <li><a href="Assets/other pages/html files/about.html">About us</a></li>
+                      <li><a href="">Dashboard</a></li>
+                    
+                </ul>
+            </div>
+
+            <div class="btn btn2 animate__animated animate__swing">
+                <a class="login" href="Assets/other pages/html files/Login.html">Log in</a>
+            </div>
+        </div>
+    </div>   
+    
+    <div class="divider"></div>
+
+    <div class="container">
+      <div class="scoreboard-container container">
+    <!-- Trophy Icon -->
+    <div class="trophy-icon">
+      <i class="fa-solid fa-trophy"></i>
+    </div>
+
+    <!-- Title -->
+    <h1 class="main-title">Excellent Work!</h1>
+    <p class="sub-title">Demo Quiz</p>
+
+    <!-- Percentage Score -->
+    <div class="score-percentage" id="score-percent">0%</div>
+
+    <!-- Feedback Text -->
+    <p class="feedback-text">Outstanding performance! You've mastered this topic.</p>
+
+    <!-- Stats Row -->
+    <div class="stats-row">
+      <div class="stat-box">
+        <span class="stat-value correct-color" id="correct-val">0</span>
+        <span class="stat-label">Correct</span>
+      </div>
+      <div class="stat-box">
+        <span class="stat-value wrong-color" id="wrong-val">0</span>
+        <span class="stat-label">Incorrect</span>
+      </div>
+      <div class="stat-box">
+        <span class="stat-value" id="total-val">0</span>
+        <span class="stat-label">Total</span>
+      </div>
+    </div>
+  </div>
+    </div>
+
+  
+
+  <!-- Home Button -->
+  <div style="text-align:center; margin-top: 30px;">
+    <button class="home-btn" onclick="window.location.href='../../../index.html'">
+      <i class="fa-solid fa-house"></i> Home
+    </button>
+  </div>
+
+  <script src="scoreboard.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/js-confetti@latest/dist/js-confetti.browser.js"></script>
+
+</body>
+</html>

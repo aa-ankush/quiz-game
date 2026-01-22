@@ -1,0 +1,227 @@
+
+:root{
+  --bgc:#faf8f6;
+  --text:#1a1a1a;
+  --brand:#111213;
+  --primary-clr:#ED526C;
+  --primary-dark:#e04560;
+  --border:#e7e2dd;
+  --border2:#ED526C ;
+  --partext:#636363;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  background:var(--bgc);
+  color:var(--text);
+  font-family:"Inter", sans-seri;
+  overflow: hidden;
+}
+
+.container {
+   width: 100%;
+   max-width: 1440px;
+   padding-inline: 150px;
+   /* padding-block: 16px; */
+   margin-inline: auto;
+   /* display: flex;
+   align-items: center; */
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 68px;
+    padding-block: 16px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    
+}
+
+.logo p {
+    display: inline-block;
+}
+ 
+.logo img {
+    width: 32px;
+}
+
+
+
+.divider{
+    border: 1px solid var(--border);
+}
+
+.signin-content {
+    display: flex;
+    justify-content: center;
+    padding-block: 16px;
+    margin-top: 32px;
+    
+}
+
+.signinbox {
+    width:380px;
+    box-shadow: 0 0 16px 0 rgba(234, 201, 201, 0.5);
+    padding: 32px 24px;
+    border-radius: 4px;
+    text-align: center;
+    border: 1px solid var(--border);
+    margin: 0 0 40px 0;
+}
+
+.icon {
+    width: 30px;
+}
+
+.goicon {
+    width: 20px;
+}
+
+.social-btns {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    padding-block: 16px 0;
+    align-items: center;
+}
+
+.google {
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 7px 14px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    background-color: white;
+}
+
+
+.facebook {
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 7px 14px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    background-color: white;
+}
+
+.text {
+    padding-block: 16px;
+    font-weight: 500;
+    color: var(--text);
+    font-size: 14px;
+}
+
+form {
+    text-align: left;
+}
+
+label {
+    font-weight: 500;
+    color: var(--text);
+    font-size: 1rem;
+}
+
+/* label:hover {
+    border: 1px solid var(--border2);
+    color: var(--brand);
+} */
+
+.login {
+    padding-inline: 24px;
+    padding-block: 12px;
+    background-color: var(--primary-clr);
+    border-radius: 8px;
+    color: white;
+    text-decoration: none;
+    box-shadow:0 10px 24px #ee5a7240;
+}
+
+.login:hover {
+    background-color: var(--primary-dark);
+}
+
+input[type="text"], 
+input[type="email"], 
+input[type="password"] 
+{
+    width: 100%;
+    border: 1.5px solid var(--border);
+    border-radius: 6px;
+    padding: 10px 12px;
+    margin: 6px 0 16px 0;
+    font-size: 14px;
+    outline: none;
+}
+
+
+
+input[type="text"]:focus, 
+input[type="email"]:focus, 
+input[type="password"]:focus 
+{
+    border-color: #ed526c;
+}
+
+.signin-btn {
+    width: 100%;
+    background-color: var(--primary-clr);
+    border: none;
+    color:white;
+    font-size: 1rem;
+    padding: 12px 0;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.signin-btn:hover {
+    background-color: var(--primary-dark);
+}
+
+.login-txt {
+    padding-block: 16px 0;
+    font-weight: 500;
+    font-size: .9rem;
+    color: var(--text);
+}
+
+.login-txt a{
+    color: var(--primary-clr);
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+};
+
+#rex {
+    height: 20px;
+    width: 20px;
+    background-color: #e04560;
+    position: absolute;
+    font-size: 50px;
+}
+

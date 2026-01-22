@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QUIZ Craft</title>
+    <link rel="stylesheet" href="../css/style3.css">
+    <link rel="icon" href="Assets/Images/Brain 1.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script defer src="../../../app.js" defer></script>
+</head>
+
+<body>
+   <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <img src="../../Images/Brain 1.png" alt="">
+                <h3 class="brand">Quiz Craft</h3>
+            </div>
+           
+           <div class="btn">
+                <a class="login" href="../../../Index.html"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" style="align-content: center;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-save-icon lucide-save"><path d="M15.2 3a2 2 0 0 1 1.4.6l3.8 3.8a2 2 0 0 1 .6 1.4V19a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2z"/><path d="M17 21v-7a1 1 0 0 0-1-1H8a1 1 0 0 0-1 1v7"/><path d="M7 3v4a1 1 0 0 0 1 1h7"/></svg>Save</a>
+            </div>
+        </div>
+    </div>   
+
+    <div class="divider"></div>
+
+    <div class="container">
+        <div class="content">
+            <h1>Add New Question</h1>
+            <p class="text">Create engaging questions for your quiz</p>
+        </div>
+
+        <div class="content2" id="questions-container">
+            <form>
+            <label for="question">Question 1</label>
+            <textarea id="question" name="question" placeholder="Enter your question here..."></textarea>
+
+            <div class="answer-options">
+                <h3>Answer Options</h3>
+                <div class="option">
+                    <span class="option-letter">A</span>
+                    <input type="text" placeholder="Option A" />
+                </div>
+                <div class="option">
+                    <span class="option-letter">B</span>
+                    <input type="text"  placeholder="Option B" />
+                </div>
+                <div class="option">
+                    <span class="option-letter">C</span>
+                    <input type="text"  placeholder="Option C" />
+                </div>
+                <div class="option">
+                    <span class="option-letter">D</span>
+                    <input type="text"placeholder="Option D" />
+                </div>
+                <p class="note">Click on the letter to mark it as the correct answer</p>
+            </div>
+
+            <label for="explanation">Explanation (Optional)</label>
+            <textarea id="explanation" name="explanation" placeholder="Provide an explanation for the question"></textarea>
+
+            <button class="add-question" id="add_question">Add question to quiz</button>
+            
+          </form>
+        </div>
+    </div>
+</body>

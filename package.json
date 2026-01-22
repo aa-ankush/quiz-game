@@ -1,0 +1,24 @@
+{
+  "dependencies": {
+    "animate.css": "^4.1.1",
+    "js-confetti": "^0.13.1"
+  },
+  "name": "quiz",
+  "version": "1.0.0",
+  "main": "app.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aa-ankush/quiz-craft.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aa-ankush/quiz-craft/issues"
+  },
+  "homepage": "https://github.com/aa-ankush/quiz-craft#readme",
+  "description": ""
+}

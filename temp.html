@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+      }
+
+			body{
+				display: flex;
+				flex-flow: column nowrap;
+				align-items: center;
+				justify-content: center;
+				min-height: 100vh;
+			}
+
+			/* button{
+				padding: 12px 24px;
+				border-radius: 4px;
+				background-color: transparent;
+				position: relative;
+			}
+
+			button::before{
+				content: "";
+				position: absolute;
+				background-color: red;
+				width: 4px;
+				height: 4px;
+				top: 0;
+				left: 0;
+				align-content: center;
+				border-radius: 50%;
+			}
+
+			button:hover button::before {
+				width: 200px;
+				height: 200px;
+			} */
+
+			button {
+    padding: 12px 24px;
+    border-radius: 4px;
+    background-color: transparent;
+    position: relative;
+    overflow: hidden; /* Keeps the explosion inside the button */
+    border: 1px solid #ccc;
+    cursor: pointer;
+    z-index: 1; /* Ensures text sits above background */
+}
+
+button::before {
+    content: "";
+    position: absolute;
+    background-color: red;
+    /* Start with zero size */
+    width: 0;
+    height: 0;
+    /* Move to the exact center */
+    top: 50%;
+    left: 50%;
+    /* This centers the element on its own axis */
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    z-index: -1; /* Puts it behind the text */
+    transition: width 0.5s ease, height 0.5s ease;
+}
+
+button:hover::before {
+    /* Grow large enough to cover the button */
+    width: 300px;
+    height: 300px;
+}
+
+    </style>
+  </head>
+  <body>
+    <button>Submit</button>
+  </body>
+</html>
